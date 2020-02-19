@@ -10,6 +10,9 @@ import argparse
 """
 def find_max_profit(prices):
 
+  # if there's only one price return it
+  if (len(prices) == 1):
+    return prices[0]
   # Assume the current min price to be first item
   current_min_price_index = 0
   # Assume the current_max_price to be second item

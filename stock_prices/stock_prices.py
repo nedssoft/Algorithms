@@ -26,7 +26,6 @@ def find_max_profit(prices):
     for j in range(i+1, len(prices)):
       current_max_price_index = j
       current_max_profit = prices[current_max_price_index] - prices[current_min_price_index]
-      
       # Let's be sure the max_profit so far is the best possible
       if (current_max_profit > max_profit_so_far):
 
